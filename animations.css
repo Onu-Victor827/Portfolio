@@ -1,0 +1,186 @@
+/* 
+ * Eagle Portfolio - Animations & Hover Effects
+ * Subtle animations to enhance user experience
+ */
+
+/* Smooth hover effects for interactive elements */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+/* Project card hover effects */
+.portfolio-item:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.service-card:hover,
+.testimonial-card:hover,
+.contact-method:hover {
+    transform: translateY(-8px) !important;
+}
+
+/* Image hover effects */
+.project-image img:hover,
+.portfolio-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Form element focus effects */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    transform: translateX(5px);
+}
+
+/* Social link hover effects */
+.social-links a:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Value card hover effects */
+.value-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Vision card hover effects */
+.vision-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Process step hover effects */
+.process-step:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Timeline animation on scroll */
+.timeline-item.visible {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade in animation for section elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Staggered animation for grid items */
+.values-grid .value-card:nth-child(1) { animation-delay: 0.1s; }
+.values-grid .value-card:nth-child(2) { animation-delay: 0.2s; }
+.values-grid .value-card:nth-child(3) { animation-delay: 0.3s; }
+.values-grid .value-card:nth-child(4) { animation-delay: 0.4s; }
+
+.vision-grid .vision-card:nth-child(1) { animation-delay: 0.1s; }
+.vision-grid .vision-card:nth-child(2) { animation-delay: 0.2s; }
+.vision-grid .vision-card:nth-child(3) { animation-delay: 0.3s; }
+
+.services-grid .service-card:nth-child(1) { animation-delay: 0.1s; }
+.services-grid .service-card:nth-child(2) { animation-delay: 0.2s; }
+.services-grid .service-card:nth-child(3) { animation-delay: 0.3s; }
+.services-grid .service-card:nth-child(4) { animation-delay: 0.4s; }
+
+.portfolio-grid .portfolio-item:nth-child(1) { animation-delay: 0.1s; }
+.portfolio-grid .portfolio-item:nth-child(2) { animation-delay: 0.2s; }
+.portfolio-grid .portfolio-item:nth-child(3) { animation-delay: 0.3s; }
+.portfolio-grid .portfolio-item:nth-child(4) { animation-delay: 0.4s; }
+.portfolio-grid .portfolio-item:nth-child(5) { animation-delay: 0.5s; }
+.portfolio-grid .portfolio-item:nth-child(6) { animation-delay: 0.6s; }
+
+.testimonials-grid .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonials-grid .testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+.testimonials-grid .testimonial-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Skill bar animation */
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 6px;
+    height: 14px;
+    background: var(--success-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px var(--success-color);
+    opacity: 0.7;
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0.7;
+        right: -3px;
+    }
+    50% {
+        opacity: 1;
+        right: calc(100% - 3px);
+    }
+    100% {
+        opacity: 0.7;
+        right: -3px;
+    }
+}
+
+/* Loading animation for buttons */
+.btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--dark-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Scroll indicator animation */
+.scroll-down i {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}

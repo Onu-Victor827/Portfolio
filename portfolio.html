@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eagle Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">🦅</span>
+                    <span class="logo-text">EAGLE PORTFOLIO</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>A selection of projects showcasing my expertise in development and design</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Explore my work across web development, UI/UX design, and creative solutions</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX & Design</button>
+                <button class="filter-btn" data-filter="edu">Tech Education</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <div class="image-placeholder project">
+                            <i class="fas fa-desktop"></i>
+                            <p>E-Commerce Platform</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Nexus Retail</h3>
+                            <p>Full-featured e-commerce platform with custom CMS and payment integration</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Stripe API</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <div class="image-placeholder project">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Health App UI</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>VitaWell App</h3>
+                            <p>Complete UI/UX design for a health and wellness tracking application</p>
+                            <div class="portfolio-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>User Research</span>
+                                <span>Prototyping</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <div class="image-placeholder project">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Analytics Dashboard</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>DataVista Dashboard</h3>
+                            <p>Interactive data visualization dashboard for financial analytics</p>
+                            <div class="portfolio-tags">
+                                <span>Vue.js</span>
+                                <span>D3.js</span>
+                                <span>Python</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="edu">
+                    <div class="portfolio-img">
+                        <div class="image-placeholder project">
+                            <i class="fas fa-book"></i>
+                            <p>Tech Curriculum</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>CodePath Academy</h3>
+                            <p>Comprehensive web development curriculum with interactive lessons and projects</p>
+                            <div class="portfolio-tags">
+                                <span>Curriculum Design</span>
+                                <span>Technical Writing</span>
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <div class="image-placeholder project">
+                            <i class="fas fa-briefcase"></i>
+                            <p>Brand Identity</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aurora Consulting</h3>
+                            <p>Complete brand identity system including logo, typography, and brand guidelines</p>
+                            <div class="portfolio-tags">
+                                <span>CorelDRAW</span>
+                                <span>Brand Strategy</span>
+                                <span>Typography</span>
+                                <span>Style Guide</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <div class="image-placeholder project">
+                            <i class="fas fa-podcast"></i>
+                            <p>Media Platform</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>SonicStream</h3>
+                            <p>Audio streaming platform with user profiles, playlists, and recommendation engine</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Express</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-load-more">
+                <button class="btn btn-outline">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">What clients and collaborators say about working with me</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Eagle transformed our outdated website into a powerful marketing tool that has significantly increased our conversion rates. Their attention to detail and user experience focus was impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>JD</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>James Davidson</h4>
+                            <p>CEO, InnovateTech</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Eagle on our mobile app design was a game-changer. They took the time to understand our users and created an intuitive interface that our customers love. The result was a 40% increase in user engagement."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>MS</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Santos</h4>
+                            <p>Product Manager, HealthPlus</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Eagle's technical workshops elevated our entire development team's skills. Their ability to explain complex concepts clearly and provide practical, actionable knowledge made a lasting impact on our workflow and code quality."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>TK</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Thomas Kim</h4>
+                            <p>CTO, Global Solutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>I'm currently available for new projects and collaborations. Let's create something exceptional together.</p>
+                <a href="contact.html" class="btn btn-primary cta-button">Discuss Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-icon">🦅</span>
+                        <span class="logo-text">EAGLE PORTFOLIO</span>
+                    </div>
+                    <p>Building digital solutions with skill, purpose, and excellence since 2018.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/onu-victor-anthony-18585b381/"
+   target="_blank"
+   title="Connect with me on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Onu-Victor827" target="_blank" title="View my GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/IhechiNgene" target="_blank" title="Follow me on X"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/2348106578655?text=Hello%20I%20checked%20your%20portfolio"
+   target="_blank"><i class="fab fa-whatsapp"></i></a>
+                          <a href="https://www.facebook.com/profile.php?id=61573614061856"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-dev">Web Development</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX & Graphics</a></li>
+                        <li><a href="services.html#tech-edu">Tech Education</a></li>
+                        <li><a href="services.html#docs">Documentation & Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> hello@eagleportfolio.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eagle Portfolio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
